@@ -1,0 +1,648 @@
+@font-face {
+  font-family: VectaSerif;
+  src: url("/fonts/VectaSerif-Regular.otf");
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("/fonts/Proxima-Nova-Regular.ttf");
+}
+
+@font-face {
+  font-family: TiemposHeadline;
+  src: url("/fonts/TiemposHeadline-Bold.otf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'ProximaNova';
+  color: #2D4262;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'TiemposHeadline';
+}
+
+svg {
+  height: 10rem;
+  width: 10rem;
+}
+
+body {
+  width: 100%;
+}
+
+body header {
+  height: 10vh;
+  padding: 0 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: .05rem solid #707070;
+}
+
+body header .logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30%;
+  width: 30%;
+}
+
+body header .logo-name .logo {
+  height: 100%;
+  width: 10%;
+  margin-right: .5rem;
+}
+
+body header .logo-name .logo svg {
+  height: 100%;
+  width: 100%;
+}
+
+body header .logo-name .name p {
+  font-family: 'VectaSerif';
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #2D4262;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav ul a {
+  font-size: 1.3rem;
+  color: #2D4262;
+  margin-right: 8rem;
+}
+
+body header .start-btn {
+  width: 10%;
+  background-color: #FC4861;
+  height: 3rem;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .start-btn a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+body main .hero-container {
+  padding: 0 14rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  margin-top: 4rem;
+}
+
+body main .hero-container .hero-info {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+  margin: auto 10% auto 0;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .hero-container .hero-info .info {
+  margin-bottom: 5rem;
+}
+
+body main .hero-container .hero-info .info h1 {
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
+}
+
+body main .hero-container .hero-info .info p {
+  font-size: 1.6rem;
+}
+
+body main .hero-container .hero-info .email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .hero-container .hero-info .email-container .email-box {
+  width: 60%;
+  height: 100%;
+}
+
+body main .hero-container .hero-info .email-container .email-box input {
+  height: 100%;
+  width: 100%;
+  border: 0.05rem solid #707070;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+body main .hero-container .hero-info .email-container .start-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: #FC4861;
+  border-radius: .5rem;
+}
+
+body main .hero-container .hero-info .email-container .start-btn a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+body main .hero-container .hero-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/3/3;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+
+body main .hero-container .hero-image svg {
+  width: 100%;
+  height: 100%;
+}
+
+body main .hero-container .more-window {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 3/1/4/3;
+  height: 17rem;
+  -webkit-box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  z-index: 1;
+  background-color: white;
+  position: relative;
+  bottom: -8.5rem;
+}
+
+body main .hero-container .more-window h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+body main .hero-container .more-window svg {
+  position: absolute;
+  margin-left: 10rem;
+  margin-top: -.5rem;
+}
+
+body main .hero-container .more-window p {
+  font-size: 1.2rem;
+  width: 52%;
+  color: #2D4262;
+}
+
+body main section {
+  padding: 0 14rem;
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .find {
+  height: 55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .find .image {
+  margin-top: 15rem;
+  width: 50%;
+  height: 45%;
+}
+
+body main .find .image svg {
+  width: 100%;
+  height: 100%;
+}
+
+body main .find .information {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15rem;
+}
+
+body main .find .information h3 {
+  font-size: 2.5rem;
+}
+
+body main .find .information p {
+  margin-top: 2rem;
+  width: 85%;
+  font-size: 1.5rem;
+}
+
+body main .schedule .image {
+  width: 50%;
+  height: 50%;
+}
+
+body main .schedule .image svg {
+  width: 100%;
+  height: 100%;
+}
+
+body main .schedule .information {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .schedule .information h3 {
+  font-size: 2.5rem;
+}
+
+body main .schedule .information p {
+  margin-top: 2rem;
+  width: 85%;
+  font-size: 1.5rem;
+}
+
+body main .support .image {
+  width: 50%;
+  height: 50%;
+}
+
+body main .support .image svg {
+  width: 100%;
+  height: 100%;
+}
+
+body main .support .information {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .support .information h3 {
+  font-size: 2.5rem;
+}
+
+body main .support .information p {
+  margin-top: 2rem;
+  width: 85%;
+  font-size: 1.5rem;
+}
+
+body main .odd {
+  background-color: #F4F0EF;
+}
+
+body main .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7% 20% 10%;
+}
+
+body main .events h3 {
+  font-size: 2.5rem;
+}
+
+body main .events .cards-container {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .events .cards-container .card {
+  border: 1px solid #707070;
+  -webkit-box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+  height: 15em;
+  width: 24em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .events .cards-container .card .team {
+  height: 6rem;
+  width: 6rem;
+  margin-top: -7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #2D4262;
+  border-radius: 5rem;
+  background-color: #2D4262;
+  position: absolute;
+}
+
+body main .events .cards-container .card .team p {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'TiemposHeadline';
+  font-size: 2rem;
+}
+
+body main .events .cards-container .card .event-name {
+  font-size: 2rem;
+}
+
+body main .events .cards-container .card .event-description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  width: 70%;
+}
+
+body main .contact-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F4F0EF;
+  height: 25rem;
+  border-top: .05rem solid #707070;
+  border-bottom: .05rem solid #707070;
+}
+
+body main .contact-you .email-container {
+  height: 10rem;
+  width: 65%;
+  -webkit-box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 5%;
+  border-radius: 1rem;
+  z-index: 1;
+  background-color: white;
+}
+
+body main .contact-you .email-container .text h4 {
+  font-size: 1.5rem;
+}
+
+body main .contact-you .email-container .email-box {
+  width: 40%;
+  height: 50%;
+  margin-left: 14%;
+}
+
+body main .contact-you .email-container .email-box input {
+  height: 100%;
+  width: 100%;
+  border: 0.05rem solid #707070;
+  border-radius: .5rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+body main .contact-you .email-container .start-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+  width: 15%;
+  height: 50%;
+  background-color: #FC4861;
+  border-radius: .5rem;
+}
+
+body main .contact-you .email-container .start-btn a {
+  color: #fff;
+}
+
+body main .contact-you .peeking {
+  height: 30%;
+  width: 8%;
+}
+
+body main .contact-you .peeking svg {
+  height: 100%;
+  width: 100%;
+}
+
+body main .contact-you .guy {
+  margin-right: -3rem;
+}
+
+body main .contact-you .girl {
+  margin-left: -2.8rem;
+}
+
+body footer {
+  padding: 0 14rem;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30%;
+  width: 30%;
+}
+
+body footer .logo-name .logo {
+  height: 100%;
+  width: 10%;
+  margin-right: .5rem;
+}
+
+body footer .logo-name .logo svg {
+  height: 100%;
+  width: 100%;
+}
+
+body footer .logo-name .name p {
+  font-family: 'VectaSerif';
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #2D4262;
+}
+
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
