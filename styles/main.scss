@@ -110,7 +110,7 @@ body {
             margin-bottom: 1rem;
           }
           p {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
           }
         }
         .email-container {
@@ -302,7 +302,7 @@ body {
           .team {
             height: 6rem;
             width: 6rem;
-            margin-top: -7.5rem;
+            margin-top: -8rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -325,6 +325,17 @@ body {
             margin-top: 1rem;
             text-align: center;
             width: 70%;
+          }
+          .event-links {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-top: 1rem;
+            a {
+              font-size: .9rem;
+              text-decoration: underline;
+              // color: $BtnRed;
+            }
           }
         }
       }
@@ -355,7 +366,7 @@ body {
         .email-box {
           width: 40%;
           height: 50%;
-          margin-left: 14%;
+          margin-left: 5vw;
           input {
             height: 100%;
             width: 100%;
@@ -400,29 +411,47 @@ body {
     padding: 0 14rem;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo-name {
+    flex-direction: column;
+    justify-content: center;
+    .footer-info {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      height: 30%;
-      width: 30%;
-      .logo {
+      .logo-name {
+        display: flex;
+        align-items: center;
         height: 100%;
-        width: 10%; 
-        margin-right: .5rem;
-        svg {
+        width: 30%;
+        .logo {
           height: 100%;
-          width: 100%;
+          width: 10%; 
+          margin-right: .5rem;
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .name {
+          p {
+            font-family: 'VectaSerif';
+            font-size: 2rem;
+            text-transform: capitalize;
+            color: $StamegnaBlue;
+          }
         }
       }
-      .name {
-        p {
-          font-family: 'VectaSerif';
-          font-size: 2rem;
-          text-transform: capitalize;
-          color: $StamegnaBlue;
-        }
+    }
+    .terms-privacy {
+      align-self: center;
+      margin-top: 1rem;
+      a {
+        font-size: .9rem;
+        opacity: .7;
+        padding: 0 1rem;
+        text-transform: capitalize;
+      }
+      :first-of-type {
+        border-right: .05rem solid #707070;
       }
     }
   } 
