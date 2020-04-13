@@ -1,13 +1,12 @@
-@font-face { font-family: VectaSerif; src: url('/fonts/VectaSerif-Regular.otf'); }
-@font-face { font-family: ProximaNova; src: url('/fonts/Proxima-Nova-Regular.ttf'); }
-@font-face { font-family: TiemposHeadline; src: url('/fonts/TiemposHeadline-Bold.otf'); }
+@font-face { font-family: VectaSerif; src: url('/fonts/VectaSerif-Regular.otf') format('opentype'); }
+@font-face { font-family: ProximaNova; src: url('/fonts/Proxima-Nova-Regular.ttf') format('truetype'); }
+@font-face { font-family: TiemposHeadline; src: url('/fonts/TiemposHeadline-Bold.otf') format('opentype'); }
 
 $StamegnaBlue: #2D4262;
 $BtnRed: #FC4861;
 $Background: #F4F0EF;
 
 * {
-  // font-size: 15px;
   box-sizing: border-box;
   margin:0;
   padding: 0;

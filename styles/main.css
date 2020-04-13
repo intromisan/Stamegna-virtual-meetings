@@ -1,16 +1,16 @@
 @font-face {
   font-family: VectaSerif;
-  src: url("/fonts/VectaSerif-Regular.otf");
+  src: url("/fonts/VectaSerif-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: ProximaNova;
-  src: url("/fonts/Proxima-Nova-Regular.ttf");
+  src: url("/fonts/Proxima-Nova-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: TiemposHeadline;
-  src: url("/fonts/TiemposHeadline-Bold.otf");
+  src: url("/fonts/TiemposHeadline-Bold.otf") format("opentype");
 }
 
 * {
