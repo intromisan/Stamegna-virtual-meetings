@@ -14,6 +14,7 @@
 }
 
 * {
+  font-size: 13px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -262,7 +263,7 @@ body main .hero-container .more-window h2 {
 
 body main .hero-container .more-window svg {
   position: absolute;
-  margin-left: 10rem;
+  margin-left: 9rem;
   margin-top: -.5rem;
 }
 
@@ -287,6 +288,7 @@ body main section {
 }
 
 body main .find {
+  background-color: #F4F0EF;
   height: 55rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,17 +335,17 @@ body main .find .information p {
   font-size: 1.5rem;
 }
 
-body main .schedule .image {
+body main .even .image {
   width: 50%;
   height: 50%;
 }
 
-body main .schedule .image svg {
+body main .even .image svg {
   width: 100%;
   height: 100%;
 }
 
-body main .schedule .information {
+body main .even .information {
   width: 50%;
   height: 50%;
   display: -webkit-box;
@@ -358,46 +360,11 @@ body main .schedule .information {
           justify-content: center;
 }
 
-body main .schedule .information h3 {
+body main .even .information h3 {
   font-size: 2.5rem;
 }
 
-body main .schedule .information p {
-  margin-top: 2rem;
-  width: 85%;
-  font-size: 1.5rem;
-}
-
-body main .support .image {
-  width: 50%;
-  height: 50%;
-}
-
-body main .support .image svg {
-  width: 100%;
-  height: 100%;
-}
-
-body main .support .information {
-  width: 50%;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body main .support .information h3 {
-  font-size: 2.5rem;
-}
-
-body main .support .information p {
+body main .even .information p {
   margin-top: 2rem;
   width: 85%;
   font-size: 1.5rem;
@@ -405,6 +372,41 @@ body main .support .information p {
 
 body main .odd {
   background-color: #F4F0EF;
+}
+
+body main .odd .image {
+  width: 50%;
+  height: 50%;
+}
+
+body main .odd .image svg {
+  width: 100%;
+  height: 100%;
+}
+
+body main .odd .information {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .odd .information h3 {
+  font-size: 2.5rem;
+}
+
+body main .odd .information p {
+  margin-top: 2rem;
+  width: 85%;
+  font-size: 1.5rem;
 }
 
 body main .events {
@@ -418,7 +420,9 @@ body main .events {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 7% 20% 10%;
+  padding: 7% 20% 7%;
+  height: 45rem;
+  width: 100%;
 }
 
 body main .events h3 {
@@ -426,22 +430,22 @@ body main .events h3 {
 }
 
 body main .events .cards-container {
-  width: 75%;
+  width: 80%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body main .events .cards-container .card {
-  border: 1px solid #707070;
+  border: 0.1rem solid #707070;
   -webkit-box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.3);
   border-radius: .5rem;
-  height: 15em;
-  width: 24em;
+  height: 100%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,15 +487,19 @@ body main .events .cards-container .card .team p {
   font-size: 2rem;
 }
 
-body main .events .cards-container .card .event-name {
+body main .events .cards-container .card .event-name h4 {
   font-size: 2rem;
 }
 
 body main .events .cards-container .card .event-description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   text-align: center;
   width: 70%;
+}
+
+body main .events .cards-container .card .event-description P {
+  font-size: 1.2rem;
 }
 
 body main .events .cards-container .card .event-links {
@@ -506,7 +514,7 @@ body main .events .cards-container .card .event-links {
 }
 
 body main .events .cards-container .card .event-links a {
-  font-size: .9rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -543,14 +551,21 @@ body main .contact-you .email-container {
   background-color: white;
 }
 
+body main .contact-you .email-container .text {
+  width: 40%;
+}
+
 body main .contact-you .email-container .text h4 {
   font-size: 1.5rem;
+}
+
+body main .contact-you .email-container .text p {
+  font-size: 1rem;
 }
 
 body main .contact-you .email-container .email-box {
   width: 40%;
   height: 50%;
-  margin-left: 5vw;
 }
 
 body main .contact-you .email-container .email-box input {
@@ -581,6 +596,7 @@ body main .contact-you .email-container .start-btn {
 
 body main .contact-you .email-container .start-btn a {
   color: #fff;
+  font-size: 1rem;
 }
 
 body main .contact-you .peeking {
@@ -657,6 +673,14 @@ body footer .footer-info .logo-name .name p {
   color: #2D4262;
 }
 
+body footer .footer-info .logo-name .email-address a {
+  font-size: 1rem;
+}
+
+body footer .footer-info .logo-name .phone-number a {
+  font-size: 1rem;
+}
+
 body footer .terms-privacy {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -679,10 +703,16 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 12px;
   }
+  html a {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
   html {
+    font-size: 11px;
+  }
+  html a {
     font-size: 11px;
   }
 }
@@ -691,11 +721,44 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 9px;
   }
+  html a {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+  html a {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  html {
+    font-size: 7px;
+  }
+  html a {
+    font-size: 7px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   html {
     font-size: 6px;
+  }
+  html a {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 662px) {
+  html {
+    font-size: 5px;
+  }
+  html a {
+    font-size: 5px;
   }
 }
 
@@ -703,12 +766,15 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 4px;
   }
+  html a {
+    font-size: 4px;
+  }
   body main header {
     height: 10%;
   }
   body main .hero-container {
     margin: 0;
-    padding: 0 14rem;
+    padding: 0 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -725,10 +791,11 @@ body footer .terms-privacy :first-of-type {
   }
   body main .hero-container .hero-image {
     margin-bottom: 3rem;
+    width: 100%;
   }
   body main .hero-container .hero-info {
     margin: 0;
-    height: 65rem;
+    height: 70rem;
     text-align: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -738,13 +805,13 @@ body footer .terms-privacy :first-of-type {
     margin: 0;
   }
   body main .hero-container .hero-info .info h1 {
-    font-size: 5.3rem;
+    font-size: 8rem;
     margin-bottom: 2rem;
   }
   body main .hero-container .hero-info .info p {
     margin: 0 auto;
-    width: 95%;
-    font-size: 2.8rem;
+    width: 90%;
+    font-size: 4rem;
   }
   body main .hero-container .hero-info .email-container {
     display: -webkit-box;
@@ -755,7 +822,7 @@ body footer .terms-privacy :first-of-type {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: 35%;
+    height: 32%;
   }
   body main .hero-container .hero-info .email-container .email-box {
     width: 100%;
@@ -765,7 +832,7 @@ body footer .terms-privacy :first-of-type {
     border: .2rem solid #707070;
     width: 100%;
     border-radius: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 0;
     text-align: center;
   }
@@ -775,7 +842,219 @@ body footer .terms-privacy :first-of-type {
     border-radius: 1rem;
   }
   body main .hero-container .hero-info .email-container .start-btn a {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+  body main .hero-container .more-window {
+    height: 40rem;
+    bottom: -20rem;
+  }
+  body main .hero-container .more-window h2 {
+    margin-bottom: 5rem;
+    font-size: 6rem;
+  }
+  body main .hero-container .more-window svg {
+    margin-left: 22rem;
+    margin-top: -3rem;
+    width: 25rem;
+  }
+  body main .hero-container .more-window p {
+    font-size: 3.5rem;
+    width: 90%;
+  }
+  body main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  body main .find {
+    height: 150rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .find .image {
+    margin-top: 0;
+    width: 85%;
+    height: 45%;
+  }
+  body main .find .image svg {
+    width: 100%;
+    height: 100%;
+  }
+  body main .find .information {
+    width: 100%;
+    height: 24%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 20rem 0 5rem;
+  }
+  body main .find .information h3 {
+    font-size: 6rem;
+  }
+  body main .find .information p {
+    margin: 3rem 0;
+    width: 100%;
+    font-size: 3.8rem;
+  }
+  body main .even {
+    height: 140rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10%;
+  }
+  body main .even .image {
+    width: 100%;
+    height: 60%;
+  }
+  body main .even .image svg {
+    width: 100%;
+    height: 100%;
+  }
+  body main .even .information {
+    width: 100%;
+    height: auto;
+  }
+  body main .even .information h3 {
+    font-size: 6rem;
+  }
+  body main .even .information p {
+    margin-top: 4rem;
+    width: 100%;
+    font-size: 3.8rem;
+  }
+  body main .odd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 140rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10%;
+  }
+  body main .odd .image {
+    width: 100%;
+    height: 65%;
+  }
+  body main .odd .image svg {
+    width: 100%;
+    height: 100%;
+  }
+  body main .odd .information {
+    width: 100%;
+    height: auto;
+  }
+  body main .odd .information h3 {
+    font-size: 6rem;
+  }
+  body main .odd .information p {
+    margin-top: 4rem;
+    width: 100%;
+    font-size: 3.8rem;
+  }
+  body main .events {
+    height: 130rem;
+    width: 100%;
+  }
+  body main .events h3 {
+    font-size: 5rem;
+  }
+  body main .events .cards-container {
+    width: 100%;
+    height: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body main .events .cards-container .card {
+    border-radius: 1rem;
+    height: 40%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .events .cards-container .card .team {
+    height: 14rem;
+    width: 14rem;
+    margin-top: -20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #2D4262;
+    border-radius: 50rem;
+    background-color: #2D4262;
+    position: absolute;
+  }
+  body main .events .cards-container .card .team p {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'TiemposHeadline';
+    font-size: 5rem;
+  }
+  body main .events .cards-container .card .event-name h4 {
+    font-size: 6rem;
+  }
+  body main .events .cards-container .card .event-description {
+    margin: 2rem 0 3rem;
+    width: 90%;
+  }
+  body main .events .cards-container .card .event-description P {
+    font-size: 3.5rem;
+  }
+  body main .events .cards-container .card .event-links a {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
