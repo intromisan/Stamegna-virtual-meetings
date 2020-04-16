@@ -1,6 +1,6 @@
-@font-face { font-family: VectaSerif; src: url('/fonts/VectaSerif-Regular.otf') format('open type'); }
-@font-face { font-family: ProximaNova; src: url('/fonts/Proxima-Nova-Regular.ttf') format('true type'); }
-@font-face { font-family: TiemposHeadline; src: url('/fonts/TiemposHeadline-Bold.otf') format('open type'); }
+@font-face { font-family: VectaSerif; src: url('/fonts/VectaSerif-Regular.otf') format('opentype'); }
+@font-face { font-family: ProximaNova; src: url('/fonts/Proxima-Nova-Regular.ttf') format('truetype'); }
+@font-face { font-family: TiemposHeadline; src: url('/fonts/TiemposHeadline-Bold.otf') format('opentype'); }
 
 $StamegnaBlue: #2D4262;
 $BtnRed: #FC4861;
@@ -65,6 +65,10 @@ body {
       }
     }
     nav {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       ul {
         display: flex;
         a {
@@ -72,21 +76,24 @@ body {
           color: $StamegnaBlue;
           margin-right: 8rem;
         }
+      }      
+      .start-btn {
+        width: 15%;
+        background-color: $BtnRed;
+        height: 3rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          font-size: 1.2rem;
+          color: #fff;
+        }
       }
     }
-    .start-btn {
-      width: 10%;
-      background-color: $BtnRed;
-      height: 3rem;
-      border-radius: .5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      a {
-        font-size: 1.1rem;
-        color: #fff;
-      }
-    }
+    .menu {
+      display: none;      
+    }    
   }
   main {
     .hero-container {
@@ -227,7 +234,7 @@ body {
     }
     .even {
       .image {
-        width: 50%;
+        width: 40%;
         height: 50%;
         svg {
           width: 100%;
@@ -420,7 +427,7 @@ body {
   }
   footer {
     padding: 0 14rem;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -450,15 +457,15 @@ body {
             color: $StamegnaBlue;
           }
         }
-        .email-address {
-          a {
-            font-size: 1rem;
-          }
+      }
+      .email-address {
+        a {
+          font-size: 1rem;
         }
-        .phone-number {
-          a {
-            font-size: 1rem;
-          }
+      }
+      .phone-number {
+        a {
+          font-size: 1rem;
         }
       }
     }
@@ -481,79 +488,157 @@ body {
 @media only screen and (max-width: 1440px) {
   html {
     font-size: 12px;
-    a {
-      font-size: 12px;
-    }
   }
 }
 
 @media only screen and (max-width: 1300px) {
   html {
     font-size: 11px;
-    a {
-      font-size: 11px;
-    }
   }
 }
 
 @media only screen and (max-width: 1100px) {
   html {
-    font-size: 9px;
-    a {
-      font-size: 9px;
-    }
+    font-size: 9px;    
   }
 }
 
 @media only screen and (max-width: 1000px) {
   html {
     font-size: 8px;
-    a {
-      font-size: 8px;
-    }
   }
 }
 
 @media only screen and (max-width: 920px) {
   html {
     font-size: 7px;
-    a {
-      font-size: 7px;
-    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   html {
     font-size: 6px;
-    a {
-      font-size: 6px;
-    }
   }
 }
 
 @media only screen and (max-width: 662px) {
   html {
     font-size: 5px;
-    a {
-      font-size: 5px;
-    }
   }
 }
 
 @media only screen and (max-width: 475px) {
   html {
     font-size: 4px;
-    a {
-      font-size: 4px;
-    }
   }
 
   body {
-    main {
-      header {
-        height: 10%;
+    header {
+      height: 10vh;
+      .logo-name {
+        width: 80%;
+        height: 60%;
+        align-items: center;
+        .logo {
+          height: 80%;
+          width: 15%;
+        }
+        .name {
+          margin-top: 2rem;
+          p {
+            font-size: 5rem;
+          }
+        }
       }
+      nav {
+        position: fixed;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30%;
+        width: 70%;
+        background-color: white;
+        top: 15%;
+        left: 15%;
+        transform: translate(-15%, -15%);
+        padding: 5% 0;
+        box-shadow: 0px .5rem 2rem 0px rgba(0,0,0,0.7);
+        transition: all 650ms;
+        transform: scale(0);
+        &.open {
+          transform: scale(1);
+          opacity: 1;        
+        }        
+        ul {
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          height: 60%;          
+          li {
+            text-align: center;
+            width: 100%;
+            a {
+              text-align: center;
+              margin: 0;
+              font-size: 4rem;
+            }
+          }
+        }
+        .start-btn {
+          width: 40%;
+          height: 20%;
+          border-radius: 1rem;
+          a {
+            font-size: 4rem;
+          }
+        }
+      }      
+      .menu {
+        display: block;
+        padding: 2.5rem 5rem;
+        position: fixed;
+        top: 2.5em;
+        right: 3em;
+        background-color: transparent;
+        z-index: 999;
+        cursor: pointer;
+        .bar,
+        :after,
+        :before {
+          content: "";
+          position: absolute;
+          height: .75rem;
+          width: 8.5rem;
+          background-color: $BtnRed;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          transition: 300ms;        
+        }
+        :after {
+          top: 4rem;
+        }
+        :before {
+          top: -4rem;
+        }
+      }
+      .active {
+        .bar {
+          background-color: transparent;
+        }
+        .bar:after {
+          transform: rotate(45deg);
+          top: 0;
+        }
+        .bar:before {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+      }
+    }
+    main {      
       .hero-container {
         margin: 0;        
         padding: 0 10%;        
@@ -615,11 +700,11 @@ body {
           bottom: -20rem;
           h2 {
             margin-bottom: 5rem;
-            font-size: 6rem;          
+            font-size: 5.5rem;          
           }
           svg {
             margin-left: 22rem;    
-            margin-top: -3rem;        
+            margin-top: -4rem;        
             width: 25rem;
           }
           p {
@@ -635,7 +720,7 @@ body {
         text-align: center;    
       }
       .find {
-        height: 150rem;
+        height: 170rem;
         flex-direction: column-reverse;
         .image {
           margin-top: 0;
@@ -776,7 +861,117 @@ body {
             }
           }
         }
+      }
+      .contact-you {
+        display: flex;
+        flex-direction: row;
+        height: 60rem;
+        padding: 0;
+        .email-container {
+          height: 40rem;
+          width: 70%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .text {
+            width: 80%;
+            h4 {
+              font-size: 5rem;
+              margin-bottom: 1rem
+            }
+            p {
+              font-size: 3rem;
+            }          
+          }
+          .email-box {
+            width: 80%;
+            height: 15%;
+            margin: 6rem 0 2rem;
+            input {
+              height: 100%;
+              width: 100%;
+              border: 0.2rem solid #707070;
+              border-radius: 1rem;
+              font-size: 3rem;
+              text-align: center;
+              padding: 0;
+            }
+          }
+          .start-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 80%;
+            height: 15%;
+            border-radius: 1rem;
+            a {
+              font-size: 3rem;
+            }
+          }
+        }
+        .peeking {
+          height: 80%;
+          width: 25%;
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .guy {
+          margin-right: -12rem;
+        }
+        .girl {
+          margin-left: -10.8rem;
+        }
       }      
     }
-  }
+    footer {
+      padding: 3rem 14rem;
+      height: 18vh;
+      justify-content: space-between;
+      .footer-info {
+        height: 70%;
+        justify-content: space-around;
+        flex-direction: column;
+        .logo-name {
+          width: 95%;
+          .logo {
+            height: 100%;
+            width: 13%; 
+            margin-right: 1rem;
+          }
+          .name {
+            margin-top: 2rem;
+            p {
+              font-size: 6rem;
+            }
+          }      
+        }
+        .email-address {
+          a {
+            font-size: 3.5rem;
+          }
+        }
+        .phone-number {
+          a {
+            font-size: 3.5rem;
+          }
+        }
+      }
+      .terms-privacy {
+        align-self: center;
+        margin: 0;
+        a {
+          font-size: 3rem;
+          opacity: .7;
+          padding: 0 1rem;
+          text-transform: capitalize;
+        }
+        :first-of-type {
+          border-right: .05rem solid #707070;
+        }
+      }
+    }
+  } 
 }

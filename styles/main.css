@@ -1,16 +1,16 @@
 @font-face {
   font-family: VectaSerif;
-  src: url("/fonts/VectaSerif-Regular.otf") format("open type");
+  src: url("/fonts/VectaSerif-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: ProximaNova;
-  src: url("/fonts/Proxima-Nova-Regular.ttf") format("true type");
+  src: url("/fonts/Proxima-Nova-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: TiemposHeadline;
-  src: url("/fonts/TiemposHeadline-Bold.otf") format("open type");
+  src: url("/fonts/TiemposHeadline-Bold.otf") format("opentype");
 }
 
 * {
@@ -88,6 +88,19 @@ body header .logo-name .name p {
   color: #2D4262;
 }
 
+body header nav {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +113,8 @@ body header nav ul a {
   margin-right: 8rem;
 }
 
-body header .start-btn {
-  width: 10%;
+body header nav .start-btn {
+  width: 15%;
   background-color: #FC4861;
   height: 3rem;
   border-radius: .5rem;
@@ -116,9 +129,13 @@ body header .start-btn {
           justify-content: center;
 }
 
-body header .start-btn a {
-  font-size: 1.1rem;
+body header nav .start-btn a {
+  font-size: 1.2rem;
   color: #fff;
+}
+
+body header .menu {
+  display: none;
 }
 
 body main .hero-container {
@@ -336,7 +353,7 @@ body main .find .information p {
 }
 
 body main .even .image {
-  width: 50%;
+  width: 40%;
   height: 50%;
 }
 
@@ -619,7 +636,7 @@ body main .contact-you .girl {
 
 body footer {
   padding: 0 14rem;
-  height: 10vh;
+  height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,11 +690,11 @@ body footer .footer-info .logo-name .name p {
   color: #2D4262;
 }
 
-body footer .footer-info .logo-name .email-address a {
+body footer .footer-info .email-address a {
   font-size: 1rem;
 }
 
-body footer .footer-info .logo-name .phone-number a {
+body footer .footer-info .phone-number a {
   font-size: 1rem;
 }
 
@@ -703,16 +720,10 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 12px;
   }
-  html a {
-    font-size: 12px;
-  }
 }
 
 @media only screen and (max-width: 1300px) {
   html {
-    font-size: 11px;
-  }
-  html a {
     font-size: 11px;
   }
 }
@@ -721,16 +732,10 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 9px;
   }
-  html a {
-    font-size: 9px;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
   html {
-    font-size: 8px;
-  }
-  html a {
     font-size: 8px;
   }
 }
@@ -739,16 +744,10 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 7px;
   }
-  html a {
-    font-size: 7px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 6px;
-  }
-  html a {
     font-size: 6px;
   }
 }
@@ -757,20 +756,135 @@ body footer .terms-privacy :first-of-type {
   html {
     font-size: 5px;
   }
-  html a {
-    font-size: 5px;
-  }
 }
 
 @media only screen and (max-width: 475px) {
   html {
     font-size: 4px;
   }
-  html a {
-    font-size: 4px;
+  body header {
+    height: 10vh;
   }
-  body main header {
-    height: 10%;
+  body header .logo-name {
+    width: 80%;
+    height: 60%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .logo-name .logo {
+    height: 80%;
+    width: 15%;
+  }
+  body header .logo-name .name {
+    margin-top: 2rem;
+  }
+  body header .logo-name .name p {
+    font-size: 5rem;
+  }
+  body header nav {
+    position: fixed;
+    z-index: 5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 30%;
+    width: 70%;
+    background-color: white;
+    top: 15%;
+    left: 15%;
+    -webkit-transform: translate(-15%, -15%);
+            transform: translate(-15%, -15%);
+    padding: 5% 0;
+    -webkit-box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 650ms;
+    transition: all 650ms;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  body header nav.open {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  body header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60%;
+  }
+  body header nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+  body header nav ul li a {
+    text-align: center;
+    margin: 0;
+    font-size: 4rem;
+  }
+  body header nav .start-btn {
+    width: 40%;
+    height: 20%;
+    border-radius: 1rem;
+  }
+  body header nav .start-btn a {
+    font-size: 4rem;
+  }
+  body header .menu {
+    display: block;
+    padding: 2.5rem 5rem;
+    position: fixed;
+    top: 2.5em;
+    right: 3em;
+    background-color: transparent;
+    z-index: 999;
+    cursor: pointer;
+  }
+  body header .menu .bar,
+  body header .menu :after,
+  body header .menu :before {
+    content: "";
+    position: absolute;
+    height: .75rem;
+    width: 8.5rem;
+    background-color: #FC4861;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  body header .menu :after {
+    top: 4rem;
+  }
+  body header .menu :before {
+    top: -4rem;
+  }
+  body header .active .bar {
+    background-color: transparent;
+  }
+  body header .active .bar:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+  body header .active .bar:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
   }
   body main .hero-container {
     margin: 0;
@@ -850,11 +964,11 @@ body footer .terms-privacy :first-of-type {
   }
   body main .hero-container .more-window h2 {
     margin-bottom: 5rem;
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   body main .hero-container .more-window svg {
     margin-left: 22rem;
-    margin-top: -3rem;
+    margin-top: -4rem;
     width: 25rem;
   }
   body main .hero-container .more-window p {
@@ -875,7 +989,7 @@ body footer .terms-privacy :first-of-type {
     text-align: center;
   }
   body main .find {
-    height: 150rem;
+    height: 170rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1055,6 +1169,138 @@ body footer .terms-privacy :first-of-type {
   }
   body main .events .cards-container .card .event-links a {
     font-size: 2.5rem;
+  }
+  body main .contact-you {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60rem;
+    padding: 0;
+  }
+  body main .contact-you .email-container {
+    height: 40rem;
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .contact-you .email-container .text {
+    width: 80%;
+  }
+  body main .contact-you .email-container .text h4 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  body main .contact-you .email-container .text p {
+    font-size: 3rem;
+  }
+  body main .contact-you .email-container .email-box {
+    width: 80%;
+    height: 15%;
+    margin: 6rem 0 2rem;
+  }
+  body main .contact-you .email-container .email-box input {
+    height: 100%;
+    width: 100%;
+    border: 0.2rem solid #707070;
+    border-radius: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0;
+  }
+  body main .contact-you .email-container .start-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    width: 80%;
+    height: 15%;
+    border-radius: 1rem;
+  }
+  body main .contact-you .email-container .start-btn a {
+    font-size: 3rem;
+  }
+  body main .contact-you .peeking {
+    height: 80%;
+    width: 25%;
+  }
+  body main .contact-you .peeking svg {
+    height: 100%;
+    width: 100%;
+  }
+  body main .contact-you .guy {
+    margin-right: -12rem;
+  }
+  body main .contact-you .girl {
+    margin-left: -10.8rem;
+  }
+  body footer {
+    padding: 3rem 14rem;
+    height: 18vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body footer .footer-info {
+    height: 70%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .footer-info .logo-name {
+    width: 95%;
+  }
+  body footer .footer-info .logo-name .logo {
+    height: 100%;
+    width: 13%;
+    margin-right: 1rem;
+  }
+  body footer .footer-info .logo-name .name {
+    margin-top: 2rem;
+  }
+  body footer .footer-info .logo-name .name p {
+    font-size: 6rem;
+  }
+  body footer .footer-info .email-address a {
+    font-size: 3.5rem;
+  }
+  body footer .footer-info .phone-number a {
+    font-size: 3.5rem;
+  }
+  body footer .terms-privacy {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+  body footer .terms-privacy a {
+    font-size: 3rem;
+    opacity: .7;
+    padding: 0 1rem;
+    text-transform: capitalize;
+  }
+  body footer .terms-privacy :first-of-type {
+    border-right: .05rem solid #707070;
   }
 }
 /*# sourceMappingURL=main.css.map */
