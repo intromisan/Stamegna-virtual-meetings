@@ -94,6 +94,12 @@ body header .logo-name .name p {
   color: #2D4262;
 }
 
+body header .logo-name .name p span {
+  font-family: 'VectaSerif';
+  font-size: 2rem;
+  color: #707070;
+}
+
 body header nav {
   width: 60%;
   display: -webkit-box;
@@ -696,6 +702,12 @@ body footer .footer-info .logo-name .name p {
   color: #2D4262;
 }
 
+body footer .footer-info .logo-name .name p span {
+  font-family: 'VectaSerif';
+  font-size: 2rem;
+  color: #707070;
+}
+
 body footer .footer-info .email-address a {
   font-size: 1rem;
 }
@@ -786,6 +798,9 @@ body footer .terms-privacy :first-of-type {
     margin-top: 2rem;
   }
   body header .logo-name .name p {
+    font-size: 5rem;
+  }
+  body header .logo-name .name p span {
     font-size: 5rem;
   }
   body header nav {
@@ -1244,7 +1259,7 @@ body footer .terms-privacy :first-of-type {
     font-size: 3rem;
   }
   body main .contact-you .peeking {
-    height: 80%;
+    height: 40%;
     width: 25%;
   }
   body main .contact-you .peeking svg {
@@ -1252,10 +1267,10 @@ body footer .terms-privacy :first-of-type {
     width: 100%;
   }
   body main .contact-you .guy {
-    margin-right: -12rem;
+    margin-right: -11%;
   }
   body main .contact-you .girl {
-    margin-left: -10.8rem;
+    margin-left: -10%;
   }
   body footer {
     padding: 3rem 14rem;
@@ -1275,6 +1290,12 @@ body footer .terms-privacy :first-of-type {
   }
   body footer .footer-info .logo-name {
     width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body footer .footer-info .logo-name .logo {
     height: 100%;
@@ -1285,6 +1306,9 @@ body footer .terms-privacy :first-of-type {
     margin-top: 2rem;
   }
   body footer .footer-info .logo-name .name p {
+    font-size: 6rem;
+  }
+  body footer .footer-info .logo-name .name p span {
     font-size: 6rem;
   }
   body footer .footer-info .email-address a {
@@ -1307,6 +1331,18 @@ body footer .terms-privacy :first-of-type {
   }
   body footer .terms-privacy :first-of-type {
     border-right: .05rem solid #707070;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    font-size: 2px;
   }
 }
 /*# sourceMappingURL=main.css.map */

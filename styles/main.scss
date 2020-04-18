@@ -79,6 +79,11 @@ body {
           font-size: 2rem;
           text-transform: capitalize;
           color: $StamegnaBlue;
+          span {
+            font-family: 'VectaSerif';
+            font-size: 2rem;
+            color: #707070;
+          }
         }
       }
     }
@@ -473,6 +478,11 @@ body {
             font-size: 2rem;
             text-transform: capitalize;
             color: $StamegnaBlue;
+            span {
+              font-family: 'VectaSerif';
+              font-size: 2rem;
+              color: #707070;
+            }
           }
         }
       }
@@ -565,6 +575,9 @@ body {
           margin-top: 2rem;
           p {
             font-size: 5rem;
+            span {
+              font-size: 5rem;
+            }
           }
         }
       }
@@ -929,7 +942,7 @@ body {
           }
         }
         .peeking {
-          height: 80%;
+          height: 40%;
           width: 25%;
           svg {
             height: 100%;
@@ -937,10 +950,10 @@ body {
           }
         }
         .guy {
-          margin-right: -12rem;
+          margin-right: -11%;
         }
         .girl {
-          margin-left: -10.8rem;
+          margin-left: -10%;
         }
       }      
     }
@@ -954,6 +967,8 @@ body {
         flex-direction: column;
         .logo-name {
           width: 95%;
+          display: flex;
+          justify-content: center;
           .logo {
             height: 100%;
             width: 13%; 
@@ -963,6 +978,9 @@ body {
             margin-top: 2rem;
             p {
               font-size: 6rem;
+              span {
+                font-size: 6rem;
+              }
             }
           }      
         }
@@ -992,4 +1010,15 @@ body {
       }
     }
   } 
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 3px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  html {
+    font-size: 2px;
+  }
 }
