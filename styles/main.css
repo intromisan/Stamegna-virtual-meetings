@@ -1273,8 +1273,8 @@ body footer .terms-privacy :first-of-type {
     margin-left: -10%;
   }
   body footer {
-    padding: 3rem 14rem;
-    height: 18vh;
+    padding: 5% 14rem;
+    height: 30%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1290,20 +1290,22 @@ body footer .terms-privacy :first-of-type {
   }
   body footer .footer-info .logo-name {
     width: 95%;
+    height: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   body footer .footer-info .logo-name .logo {
-    height: 100%;
+    height: auto;
     width: 13%;
     margin-right: 1rem;
-  }
-  body footer .footer-info .logo-name .name {
-    margin-top: 2rem;
+    margin-bottom: 1%;
   }
   body footer .footer-info .logo-name .name p {
     font-size: 6rem;
