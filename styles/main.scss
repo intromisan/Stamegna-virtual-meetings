@@ -1,6 +1,24 @@
-@font-face { font-family: VectaSerif; src: url('/fonts/VectaSerif-Regular.otf') format('opentype'); }
-@font-face { font-family: ProximaNova; src: url('/fonts/Proxima-Nova-Regular.ttf') format('truetype'); }
-@font-face { font-family: TiemposHeadline; src: url('/fonts/TiemposHeadline-Bold.otf') format('opentype'); }
+@font-face {
+  font-family: 'VectaSerif';
+  src: url('../fonts/vectaserif-regular-webfont.woff2') format('woff2'),
+       url('../fonts/vectaserif-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima-nova-regular-webfont.woff2') format('woff2'),
+       url('../fonts/proxima-nova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: url('../fonts/proxima-nova-regular-webfont.woff2') format('woff2'),
+      url('../fonts/TiemposHeadline-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
 $StamegnaBlue: #2D4262;
 $BtnRed: #FC4861;
