@@ -21,7 +21,7 @@ menu.addEventListener('click', () => {
 });
 
 // pop up window on first entrance of session. if user clicks X or "grey" area
-// pop up window closes
+// pop up window closes (decline cookies)
 
 const popup = document.getElementById("popupCookies");
 const btnClose = document.getElementById("close");

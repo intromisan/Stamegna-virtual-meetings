@@ -512,7 +512,7 @@ body {
     }
   }
   .popup {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 10;
     left: 0;
@@ -542,21 +542,18 @@ body {
         font-style: italic;
         p {
           font-size: 1.2rem;
+          a {
+            font-size: 1.2rem;
+            text-transform: capitalize;    
+            border-bottom: .1rem solid #707070;      
+          }
         }
       }
       .cookie-buttons {
-        width: 35%;
+        width: 20em;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        .cookie-policy {
-          text-transform: capitalize;          
-          border-bottom: .1rem solid #707070;
-          a {
-            font-size: 1.2rem;
-          }
-        }
-  
         .cookie-accept {
           text-transform: capitalize;
           padding: 1em 2em;
@@ -1102,25 +1099,27 @@ body {
         .cookie-text {
           width: 100%;       
           height: 50%;
+          margin-top: 5%;
           text-align: center;
           p {
             font-size: 4rem;
             line-height: 1.7;
+            a {
+              font-size: 4rem;
+            }
           }
         }
         .cookie-buttons {
-          width: 100%;
-          .cookie-policy {
-            a {
-              font-size: 3rem;
-            }
-          }
+          width: 100%;          
           .cookie-accept {
             p {
               font-size: 3rem;
             }
           }
           .close-box {
+            position: absolute;
+            right: 5%;
+            top: 5%;
             width: 5rem;
             height: 5rem;
             .close {
