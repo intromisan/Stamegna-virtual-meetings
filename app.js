@@ -20,3 +20,28 @@ menu.addEventListener('click', () => {
   overlay.classList.toggle('open');
 });
 
+// pop up window on first entrance of session. if user clicks X or "grey" area
+// pop up window closes
+
+const popup = document.getElementById("popupCookies");
+const btnClose = document.getElementById("close");
+const pushPopup = () => {
+  popup.style.display = 'block';
+}
+
+const checkFirstVisit = () => {
+  if (sessionStorage.getItem("firstEntrance") !== "true"){
+    sessionStorage.setItem("firstEntrance", "true");
+    pushPopup();
+  }
+}
+
+btnClose.addEventListener('click', () => {
+  popup.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+});

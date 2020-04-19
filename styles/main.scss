@@ -510,6 +510,87 @@ body {
         border-right: .05rem solid #707070;
       }
     }
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+    .popup-content {
+      padding: 0 5rem;
+      z-index: 8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      background-color: #fefefe;
+      height: 10%;
+      width: 100%;
+      .cookie-text {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;        
+        font-style: italic;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .cookie-buttons {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .cookie-policy {
+          text-transform: capitalize;          
+          border-bottom: .1rem solid #707070;
+          a {
+            font-size: 1.2rem;
+          }
+        }
+  
+        .cookie-accept {
+          text-transform: capitalize;
+          padding: 1em 2em;
+          background-color: $BtnRed;
+          p {
+            color: white;
+            font-size: 1.2rem;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .close-box {
+          border: .1rem solid black;
+          border-radius: 100rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+  
+          &:hover {
+            cursor: pointer;
+          }
+          .close {
+            color: #000;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-top: -0.1rem
+          }
+        }
+      }                  
+    }
   } 
 }
 
@@ -1012,6 +1093,43 @@ body {
         }
       }
     }
+    .popup {
+      .popup-content {
+        height: 30%;
+        padding: 3rem;
+        flex-direction: column;
+        justify-content: space-around;
+        .cookie-text {
+          width: 100%;       
+          height: 50%;
+          text-align: center;
+          p {
+            font-size: 4rem;
+            line-height: 1.7;
+          }
+        }
+        .cookie-buttons {
+          width: 100%;
+          .cookie-policy {
+            a {
+              font-size: 3rem;
+            }
+          }
+          .cookie-accept {
+            p {
+              font-size: 3rem;
+            }
+          }
+          .close-box {
+            width: 5rem;
+            height: 5rem;
+            .close {
+              font-size: 5rem;
+            }            
+          }
+        }        
+      }
+    }      
   } 
 }
 

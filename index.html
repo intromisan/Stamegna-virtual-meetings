@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <title>Stamegna Virtual Meetings</title>
 </head>
-<body>
+<body onload="checkFirstVisit()">
 
     <header>
       <div class="logo-name">
@@ -3571,6 +3571,25 @@
         <a href="#">privacy policy</a>
       </div>
     </footer>
+
+    <div id="popupCookies" class="popup">
+      <div class="popup-content">
+        <div class="cookie-text">
+          <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.</p>
+        </div>
+        <div class="cookie-buttons">
+          <div class="cookie-policy">
+            <a href="#">cookie settings</a>
+          </div>
+          <div class="cookie-accept">
+            <p>accept cookies</p>
+          </div>
+          <div class="close-box">
+            <p class="close" id="close">&times;</p>
+          </div>
+        </div>                
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
