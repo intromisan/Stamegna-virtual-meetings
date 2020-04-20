@@ -160,27 +160,21 @@ body {
           text-transform: capitalize;
           color: #707070;
         }
-      }     
+      }           
     }
-    .policy-container {
+    .terms-container {
       padding: 3% 15%;
       line-height: 2;
-      strong {
-        font-size: 1.5rem;
-      }
-
       h1 {
         font-size: 3.5rem;
         text-transform: capitalize;
         margin-bottom: 2.5rem;
       }
-
       .date {
         em {
           font-size: 1.2rem;
         }        
       }
-
       p {
         font-size: 1.5rem;
         margin-bottom: 4rem;
@@ -197,18 +191,9 @@ body {
           font-size: 1.5rem;
           margin-bottom: 3rem;
           list-style: inside;
-        }
-        strong {
-          font-size: 1.5rem;
-        }
+        }        
       }
-
-      .stamegna-address {
-        p {
-          margin-bottom: 1rem;
-        }
-      }
-    }
+    }    
   }
   footer {
     padding: 0 15%;
@@ -326,11 +311,11 @@ body {
   body {
     header {
       height: 10vh;
-      width: 100%;
       .logo-name {
         width: 100%;
         height: 60%;
         align-items: center;
+        
         a {
           width: 100%;
           height: 100%;
@@ -460,12 +445,8 @@ body {
           }
         }
       }
-      .policy-container {
-        padding: 7% 15%;
-        strong {
-          font-size: 4.5rem;
-        }
-
+      .terms-container {
+        padding: 7% 15%;      
         h1 {
           font-size: 9rem;
         }
@@ -491,16 +472,13 @@ body {
           li {
             font-size: 4rem;
             margin-bottom: 7rem;
-          }
-          strong {
-            font-size: 4.5rem;
-          }
+          }          
         }
-      }
+      }      
     }
 
     footer {
-      padding: 5% 14rem;
+      padding: 5% 15%;
       height: 30%;
       justify-content: space-between;
       border-top: .5rem solid #707070;
